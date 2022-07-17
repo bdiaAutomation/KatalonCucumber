@@ -19,3 +19,5 @@ build
 /.settings/
 /.classpath
 .svn/
+appium.log
+appium-proxy-server.log

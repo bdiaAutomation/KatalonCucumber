@@ -19,5 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startApplication('/Users/bambadia/Desktop/APK/smi.app', true)
 
+WebUI.click(findTestObject('HomeScreen - homeIcon'))
+
 Mobile.closeApplication()
 

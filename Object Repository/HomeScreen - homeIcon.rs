@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>XCUIElementTypeOther - homeIcon</name>
+   <name>HomeScreen - homeIcon</name>
    <tag></tag>
-   <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
+   <elementGuidId>81114b61-65da-4314-a20c-28997e4fd2e4</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -12,7 +12,7 @@
       <name>type</name>
       <type>Main</type>
       <value>XCUIElementTypeOther</value>
-      <webElementGuid>5cfb2c41-7589-4bbc-8a67-f93b1eb2a15d</webElementGuid>
+      <webElementGuid>66eee245-dc88-41ed-838b-238d552b0e05</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -20,7 +20,7 @@
       <name>accessible</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>678350a5-20d0-4c83-a712-1c8d95385e3c</webElementGuid>
+      <webElementGuid>849e903e-4cb5-4d34-8078-1cad2e70470e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -28,7 +28,7 @@
       <name>enabled</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>408a27a1-c5a3-4712-aade-79fd1bb490f9</webElementGuid>
+      <webElementGuid>404595bd-5c2a-4b7f-9299-bd75ac7d030d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,7 +36,7 @@
       <name>height</name>
       <type>Main</type>
       <value>124.0</value>
-      <webElementGuid>72f16bdd-441d-471d-8b00-e1ee8aa1afcd</webElementGuid>
+      <webElementGuid>30973021-3cce-4774-ab4e-48132ffa33dd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -44,7 +44,7 @@
       <name>index</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>ff4e03fa-ec34-4c7a-921f-ac89495985bc</webElementGuid>
+      <webElementGuid>55125065-755d-49e6-a86b-abee7f308b15</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -52,7 +52,7 @@
       <name>label</name>
       <type>Main</type>
       <value>homeIcon</value>
-      <webElementGuid>7daed1b4-931c-402a-85ce-76f86afd297e</webElementGuid>
+      <webElementGuid>48b38899-d921-40cc-a79f-22292a4895a1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -60,7 +60,7 @@
       <name>name</name>
       <type>Main</type>
       <value>homeIcon</value>
-      <webElementGuid>7ae7f370-1cec-40fa-9faf-00d696b8a96a</webElementGuid>
+      <webElementGuid>dbb89502-d424-4d30-ba4d-9e6eb28857a4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -68,7 +68,7 @@
       <name>width</name>
       <type>Main</type>
       <value>112.0</value>
-      <webElementGuid>4a2a1534-b2d1-4857-bc21-bc4a9fd54994</webElementGuid>
+      <webElementGuid>d7f6fe5c-398b-4a20-878c-a479d0a4f151</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -76,7 +76,7 @@
       <name>x</name>
       <type>Main</type>
       <value>32.0</value>
-      <webElementGuid>f041b874-e336-4e84-b26f-f1c92f7fa2b6</webElementGuid>
+      <webElementGuid>38ab27a7-a943-4f65-98c7-0f564d28e2cf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -84,7 +84,7 @@
       <name>y</name>
       <type>Main</type>
       <value>1456.0</value>
-      <webElementGuid>82ddbaa3-84cd-4a99-a9cc-8ab2d160f5f1</webElementGuid>
+      <webElementGuid>5ff5af63-f22c-488f-b7cb-0209cbbf904e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -92,8 +92,8 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//AppiumAUT/XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]</value>
-      <webElementGuid>63b3cdb3-bfd4-48c8-9023-0bf054045cf4</webElementGuid>
+      <webElementGuid>9fc2a578-8ea1-4f9d-bc1e-d22faa82170c</webElementGuid>
    </webElementProperties>
-   <locator>//*[@type = 'XCUIElementTypeOther' and @label = 'homeIcon' and @name = 'homeIcon']</locator>
-   <locatorStrategy>ATTRIBUTES</locatorStrategy>
+   <locator>homeIcon</locator>
+   <locatorStrategy>NAME</locatorStrategy>
 </MobileElementEntity>

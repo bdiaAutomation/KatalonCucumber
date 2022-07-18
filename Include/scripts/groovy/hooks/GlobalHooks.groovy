@@ -63,10 +63,10 @@ class GlobalHooks {
 			RunConfiguration.setMobileDriverPreferencesProperty("locale", GlobalVariable.locale);
 			RunConfiguration.setMobileDriverPreferencesProperty("language", GlobalVariable.language);
 			RunConfiguration.setMobileDriverPreferencesProperty("wdaLocalPort", GlobalVariable.wdaLocalPort);
-			Mobile.startApplication("/Users/bambadia/Desktop/APK/smi.app", true);
+			Mobile.startApplication("/Users/bambadia/Desktop/APK/smi_140.app", true, FailureHandling.STOP_ON_FAILURE);
 
 		}catch(Exception e){
-			KeywordUtil.markErrorAndStop("Unaible to install app")
+			KeywordUtil.markErrorAndStop("Unable to install app")
 		}
 
 

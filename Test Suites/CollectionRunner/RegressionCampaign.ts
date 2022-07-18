@@ -3,9 +3,9 @@
    <description>Regression Campaign</description>
    <name>RegressionCampaign</name>
    <tag>regression</tag>
-   <delayBetweenInstances>0</delayBetweenInstances>
-   <executionMode>SEQUENTIAL</executionMode>
-   <maxConcurrentInstances>8</maxConcurrentInstances>
+   <delayBetweenInstances>2</delayBetweenInstances>
+   <executionMode>PARALLEL</executionMode>
+   <maxConcurrentInstances>2</maxConcurrentInstances>
    <testSuiteRunConfigurations>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -15,11 +15,11 @@
             <runConfigurationData>
                <entry>
                   <key>deviceName</key>
-                  <value>iPhone Iphone X 15.4.1</value>
+                  <value>iPhone iPhone 11 15.5</value>
                </entry>
                <entry>
                   <key>deviceId</key>
-                  <value>eb7696dfde984d2803f14b74276838381e7d96cd</value>
+                  <value>00008030-00066C542682802E</value>
                </entry>
             </runConfigurationData>
             <runConfigurationId>iOS</runConfigurationId>

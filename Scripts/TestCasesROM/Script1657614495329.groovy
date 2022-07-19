@@ -18,5 +18,5 @@ import internal.GlobalVariable as GlobalVariable
 import runner.RomRunner as RomRunner
 import org.openqa.selenium.Keys as Keys
 
-CucumberKW.runFeatureFolderWithTags('Include/features/', GlobalVariable.tags, FailureHandling.STOP_ON_FAILURE);
-
+String[] logTags = GlobalVariable.tags as String[];
+CucumberKW.runFeatureFolderWithTags('Include/features/', logTags, FailureHandling.STOP_ON_FAILURE);

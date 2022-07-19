@@ -16,12 +16,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'lu'</initValue>
+      <initValue>'fr'</initValue>
       <name>language</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'lu_Fr'</initValue>
+      <initValue>'fr_LU'</initValue>
       <name>locale</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

@@ -23,6 +23,6 @@ Feature: As a login customer go to settings screen
       | ES      | Idiomas |
 
   @ES @PL @LU @ROM @cookies
-  Scenario: Check settings link
+  Scenario: Check cookies prefernces
     When I clicked the cookies preferences entry
     Then I see cookies screen

@@ -18,5 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import runner.LuRunner as LuRunner
 import org.openqa.selenium.Keys as Keys
 
-CucumberKW.runWithCucumberRunner(LuRunner.class)
+String[] logTags = ["@LU", "@regression"] as String[]
+
+CucumberKW.runFeatureFolderWithTags('Include/features/', GlobalVariable.tags, FailureHandling.STOP_ON_FAILURE);
 

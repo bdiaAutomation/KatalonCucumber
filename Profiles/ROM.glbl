@@ -24,4 +24,9 @@
       <initValue>'ro_RO'</initValue>
       <name>locale</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>['@ROM', '@regression']</initValue>
+      <name>tags</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

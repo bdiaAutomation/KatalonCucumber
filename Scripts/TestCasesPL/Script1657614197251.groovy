@@ -18,5 +18,5 @@ import internal.GlobalVariable as GlobalVariable
 import runner.PlRunner as PlRunner
 import org.openqa.selenium.Keys as Keys
 
-CucumberKW.runWithCucumberRunner(PlRunner.class)
+CucumberKW.runFeatureFolderWithTags('Include/features/', GlobalVariable.tags, FailureHandling.STOP_ON_FAILURE);
 

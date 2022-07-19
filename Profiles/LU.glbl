@@ -24,4 +24,9 @@
       <initValue>'lu_Fr'</initValue>
       <name>locale</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>['@LU', '@regression']</initValue>
+      <name>tags</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteCollectionEntity>
    <description>Regression Campaign</description>
-   <name>RegressionCampaign</name>
+   <name>RegressionCampaignBasedOnRunnerClass</name>
    <tag>regression</tag>
    <delayBetweenInstances>2</delayBetweenInstances>
    <executionMode>PARALLEL</executionMode>

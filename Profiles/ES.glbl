@@ -24,4 +24,9 @@
       <initValue>'es_ES'</initValue>
       <name>locale</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>['@ES', '@regression']</initValue>
+      <name>tags</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

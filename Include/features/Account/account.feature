@@ -1,13 +1,10 @@
-@account
+@account @regression @sanity
 Feature: As a login customer go to settings screen
   
-
-
   Background: 
     Given I am connected
     And I am in account screen
-    
-    
+      
   @ES @PL @LU @ROM @settings
   Scenario: Check settings link
     When I clicked the settings entry

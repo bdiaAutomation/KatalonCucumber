@@ -1,0 +1,21 @@
+{
+  "keywordFileContentHash": "0E1A2FF072F3A3A9A48DC13CE78F5613",
+  "keywordClasses": [
+    {
+      "name": "pom.Page_Start",
+      "keywordMethods": [
+        {
+          "name": "clickOnContinueBtn",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "clickOnSelectACountryBtn",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MobileElementEntity>
+   <description></description>
+   <name>Txt_cookiesPageDesc</name>
+   <tag></tag>
+   <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>XCUIElementTypeStaticText</value>
+      <webElementGuid>e01097f5-f679-48ca-a78a-30fffe11fb0c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>accessible</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>9fa0b136-402c-4c98-a8dd-a75ded5fa637</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>enabled</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>b2a9f130-f815-45e1-ab8f-7763f4820ea4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>height</name>
+      <type>Main</type>
+      <value>244.0</value>
+      <webElementGuid>38f1e1e8-1fbc-48ef-a1a1-8f311f440c03</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>index</name>
+      <type>Main</type>
+      <value>1</value>
+      <webElementGuid>7ff70901-3768-448b-8dc6-51e1c545e6a6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>label</name>
+      <type>Main</type>
+      <value>Bonjour et bienvenue sur l’appli’ Auchan ! 
+
+Auchan Luxembourg et ses partenaires ont besoin de déposer des traceurs pour stocker et accéder à des informations sur votre tablette ou votre smartphone. Ces technologies permettent d’assurer le bon fonctionnement de l’application et d’analyser /mesurer sa fréquentation. </value>
+      <webElementGuid>654206ad-6a5d-45b1-94f8-4952205168b7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>Bonjour et bienvenue sur l’appli’ Auchan ! 
+
+Auchan Luxembourg et ses partenaires ont besoin de déposer des traceurs pour stocker et accéder à des informations sur votre tablette ou votre smartphone. Ces technologies permettent d’assurer le bon fonctionnement de l’application et d’analyser /mesurer sa fréquentation. </value>
+      <webElementGuid>90af9034-24c6-4138-b35d-2e036699ccf3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>Bonjour et bienvenue sur l’appli’ Auchan ! 
+
+Auchan Luxembourg et ses partenaires ont besoin de déposer des traceurs pour stocker et accéder à des informations sur votre tablette ou votre smartphone. Ces technologies permettent d’assurer le bon fonctionnement de l’application et d’analyser /mesurer sa fréquentation. </value>
+      <webElementGuid>35c6c506-e034-4c36-8352-e78a74a00492</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>width</name>
+      <type>Main</type>
+      <value>622.0</value>
+      <webElementGuid>413aff5c-fddd-422a-9e99-4a98f9ca2599</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>x</name>
+      <type>Main</type>
+      <value>64.0</value>
+      <webElementGuid>e661a0b5-0b56-4e2c-bdeb-7f8f479288c5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>y</name>
+      <type>Main</type>
+      <value>1012.0</value>
+      <webElementGuid>0f1b1590-d028-4864-b61e-0c50a381603a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//AppiumAUT/XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[1]/XCUIElementTypeScrollView[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeStaticText[2]</value>
+      <webElementGuid>56329624-797b-4221-967d-2c667daab2e8</webElementGuid>
+   </webElementProperties>
+   <locator>(//XCUIElementTypeStaticText)[2]</locator>
+   <locatorStrategy>XPATH</locatorStrategy>
+</MobileElementEntity>

@@ -1,0 +1,26 @@
+{
+  "keywordFileContentHash": "59A1BBFD416D9484CFB1E3697DC2FBA4",
+  "keywordClasses": [
+    {
+      "name": "pom.Page_One_Trust",
+      "keywordMethods": [
+        {
+          "name": "allowTracking",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "clickOnContinueBtn",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "clickOnAllowAlertBtn",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

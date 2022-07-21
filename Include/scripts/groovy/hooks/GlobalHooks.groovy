@@ -41,6 +41,7 @@ import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 import io.appium.java_client.AppiumDriver
 import javassist.bytecode.stackmap.BasicBlock.Catch
+import pom.Page_Start
 import cucumber.api.java.After
 import cucumber.api.java.Before
 import cucumber.api.Scenario
@@ -50,7 +51,7 @@ import cucumber.api.Scenario
 class GlobalHooks {
 
 
-	@Before
+	@Before(order = 0)
 	public void setUp( Scenario scenario) {
 		KeywordUtil.logInfo("*************** Start Scenario ***************");
 		KeywordUtil.logInfo("***************" +  scenario.getName() + "*************** ");
@@ -69,7 +70,17 @@ class GlobalHooks {
 			KeywordUtil.markErrorAndStop("Unable to install app")
 		}
 
-
+	}
+	
+	@Before(order = 1)
+	public void passedOnboardingStepsAndGoToHomePage() {
+		
+		KeywordUtil.logInfo("////////////////////" +" Before order = 1 " +  "/////////////////");	
+		Page_Start page_Start = new Page_Start();
+		KeywordUtil.logInfo("////////////////////" +" New page created " + page_Start  +  "/////////////////");
+		
+		page_Start.clickOnContinueBtn().allowTracking();	
+		
 	}
 
 	@After

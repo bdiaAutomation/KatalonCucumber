@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "DA91BECD6A18D108B25B029FA3489D52",
+  "keywordFileContentHash": "51709BC079B3C80E85C1F6A2E3BD3BF3",
   "keywordClasses": [
     {
       "name": "utils.TestUtils",
@@ -35,6 +35,38 @@
             }
           ],
           "javadoc": "/**\n\t * Check if element present in timeout\n\t * @param to Katalon test object\n\t * @param timeout time to wait for element to show up\n\t * @return true if element present, otherwise false\n\t */"
+        },
+        {
+          "name": "isElementPresent_Error_Not_Throw",
+          "parameters": [
+            {
+              "name": "to",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "com.kms.katalon.core.testobject.TestObject",
+                "unresolvedClassName": "TestObject",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "timeout",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
         },
         {
           "name": "waitForVisibilityOfElement",
@@ -110,6 +142,25 @@
           "name": "waitForAlertToBePresent",
           "parameters": [],
           "javadoc": "/**\n\t * Wait for Alert\n\t */"
+        },
+        {
+          "name": "refreshScreen",
+          "parameters": [
+            {
+              "name": "to",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "com.kms.katalon.core.testobject.TestObject",
+                "unresolvedClassName": "TestObject",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\n\t * Refresh screen \n\t * @param to Katalon TestObject\n\t * @return\n\t */"
         },
         {
           "name": "getCurrentSessionMobileDriver",

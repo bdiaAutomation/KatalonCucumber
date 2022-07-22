@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "F01A984CE5B535ADF076D28A9FC93C50",
+  "keywordFileContentHash": "E63483E114031FCC2BCA2D7F132CD6A7",
   "keywordClasses": [
     {
       "name": "hooks.GlobalHooks",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

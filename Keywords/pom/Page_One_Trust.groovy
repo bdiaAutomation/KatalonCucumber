@@ -24,7 +24,7 @@ import internal.GlobalVariable
 import utils.TestUtils
 
 public class Page_One_Trust {
-	
+
 	TestUtils utils = new TestUtils();
 
 	private TestObject continueButtonId = findTestObject('Object Repository/MobileUI/Pages/Page_One_Trust/Button_continueButtonId');
@@ -35,19 +35,22 @@ public class Page_One_Trust {
 	private TestObject alertDeclineTrackingBtn =  findTestObject('Object Repository/MobileUI/Pages/Page_One_Trust/Button_ask_App_Not_to_Track') ;
 
 
-
+	/**
+	 * 
+	 * @return
+	 */
 	@Keyword
-	def allowTracking() {
+	public Page_Cookies_Consent allowTracking() {
 		clickOnContinueBtn();
-		clickOnAllowAlertBtn();
-	
+		clickOnAllowAlertBtn();		
+		return new Page_Cookies_Consent();
 	}
 
 	@Keyword
 	def clickOnContinueBtn() {
 		Mobile.tap(continueButtonId, TestUtils.WAIT_TIMEOUT);
 	}
-	
+
 	@Keyword
 	def clickOnAllowAlertBtn() {
 		utils.waitForVisibilityOfElement(alertAllowTrackingBtn);

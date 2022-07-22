@@ -1,0 +1,31 @@
+{
+  "keywordFileContentHash": "C5EDAEA4F64B6989FE55C9E3458782A3",
+  "keywordClasses": [
+    {
+      "name": "pom.Onboarding_Start_App",
+      "keywordMethods": [
+        {
+          "name": "clickSkipBtn",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "loginBtn",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "notificationBtn",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "chooseAstoreBtn",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

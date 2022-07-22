@@ -19,6 +19,31 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
+import utils.TestUtils
 
-public class Page_Select_A_Country {
+public class Page_Cookies_Consent {
+	
+	TestUtils utils = new TestUtils();
+
+	private TestObject refuseAllcookiesBtn = findTestObject('Object Repository/MobileUI/Pages/Page_Cookies_Consent/Button_refuseAllCookies');
+	private TestObject acceptAllCookiesBtn = findTestObject('Object Repository/MobileUI/Pages/Page_Cookies_Consent/Button_acceptAllCookies');
+	private TestObject  cookiesSettingsLink = findTestObject('Object Repository/MobileUI/Pages/Page_Cookies_Consent/Link_cookiesSettings');
+	private TestObject cookiesPageDescTxt = findTestObject('Object Repository/MobileUI/Pages/Page_Cookies_Consent/Txt_cookiesPageDesc');
+	private TestObject cookiesPageTitleTxt = findTestObject('Object Repository/MobileUI/Pages/Page_Cookies_Consent/Txt_cookiesPageTitle');
+
+	@Keyword
+	def refuseAllcookies() {
+		Mobile.tap(refuseAllcookiesBtn, utils.WAIT_TIMEOUT);
+	}
+	
+	@Keyword
+	def acceptAllCookies() {
+		Mobile.tap(acceptAllCookiesBtn, utils.WAIT_TIMEOUT);
+	}
+	
+	@Keyword
+	def setCookies() {
+		Mobile.tap(cookiesSettingsLink, utils.WAIT_TIMEOUT);
+	}
+	
 }

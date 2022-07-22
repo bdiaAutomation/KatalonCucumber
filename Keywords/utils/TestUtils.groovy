@@ -81,6 +81,22 @@ class TestUtils {
 		}
 		return false;
 	}
+	
+	@Keyword
+	def isElementPresent_Error_Not_Throw(TestObject to, int timeout){
+		try {
+			KeywordUtil.logInfo("Finding element with id:" + to.getObjectId())
+
+			WebElement element = MobileElementCommonHelper.findElement(to, timeout)
+			if (element != null) {
+				KeywordUtil.markPassed("Object " + to.getObjectId() + " is present")
+			}
+			return true
+		} catch (Exception e) {
+			KeywordUtil.logInfo("Object " + to.getObjectId() + " is not present")
+		}
+		return false;
+	}
 
 
 	/**
@@ -136,7 +152,7 @@ class TestUtils {
 	public void tap(TestObject to) {
 		MobileElementCommonHelper.findElement(to, WAIT_TIMEOUT).click();
 	}
-	
+
 	/**
 	 * Wait for Alert
 	 */
@@ -144,6 +160,17 @@ class TestUtils {
 	public void waitForAlertToBePresent() {
 		wait.until(ExpectedConditions.alertIsPresent());
 	}
+	
+	/**
+	 * Refresh screen 
+	 * @param to Katalon TestObject
+	 * @return
+	 */
+	@Keyword
+	def refreshScreen(TestObject to) {
+		wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf( MobileElementCommonHelper.findElement(to, WAIT_TIMEOUT))));
+	}
+	
 
 	/**
 	 * Get mobile driver for current session

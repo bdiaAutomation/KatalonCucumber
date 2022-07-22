@@ -26,7 +26,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>['@LU', '@regression']</initValue>
+      <initValue>['@ES', '@regression']</initValue>
       <name>tags</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>false</initValue>
+      <name>useNativeCachingStrategy</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

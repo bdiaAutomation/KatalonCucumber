@@ -1,0 +1,36 @@
+{
+  "keywordFileContentHash": "3654DB2B74AA201554D4874CC22B6D26",
+  "keywordClasses": [
+    {
+      "name": "pom.Page_Home",
+      "keywordMethods": [
+        {
+          "name": "getHeaderWelcomeNameTxt",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "is_HeaderLogo_Present",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "getHeaderSecondLineTxt",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "clickOnHeaderSearchInput",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "longPressOnHeaderAuchanLogo",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

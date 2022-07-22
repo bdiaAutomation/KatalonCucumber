@@ -1,21 +1,21 @@
 {
-  "keywordFileContentHash": "BC315C0C77EB2298C376E6232F347D89",
+  "keywordFileContentHash": "1394BD1D5DA1E57654130E3449B7522C",
   "keywordClasses": [
     {
-      "name": "pom.Page_One_Trust",
+      "name": "pom.Page_Cookies_Consent",
       "keywordMethods": [
         {
-          "name": "allowTracking",
-          "parameters": [],
-          "javadoc": "/**\n\t * \n\t * @return\n\t */"
-        },
-        {
-          "name": "clickOnContinueBtn",
+          "name": "refuseAllcookies",
           "parameters": [],
           "javadoc": ""
         },
         {
-          "name": "clickOnAllowAlertBtn",
+          "name": "acceptAllCookies",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "setCookies",
           "parameters": [],
           "javadoc": ""
         }

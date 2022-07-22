@@ -38,9 +38,13 @@ import com.kms.katalon.core.mobile.helper.MobileElementCommonHelper
 import com.kms.katalon.core.util.KeywordUtil
 
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
-import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
+import com.kms.katalon.core.configuration.RunConfiguration
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+
 import io.appium.java_client.AppiumDriver
 import javassist.bytecode.stackmap.BasicBlock.Catch
+import pom.Onboarding_Start_App
+import pom.Page_Home
 import pom.Page_Start
 import cucumber.api.java.After
 import cucumber.api.java.Before
@@ -64,6 +68,7 @@ class GlobalHooks {
 			RunConfiguration.setMobileDriverPreferencesProperty("locale", GlobalVariable.locale);
 			RunConfiguration.setMobileDriverPreferencesProperty("language", GlobalVariable.language);
 			RunConfiguration.setMobileDriverPreferencesProperty("wdaLocalPort", GlobalVariable.wdaLocalPort);
+			RunConfiguration.setMobileDriverPreferencesProperty("useNativeCachingStrategy", GlobalVariable.useNativeCachingStrategy);
 			Mobile.startApplication("/Users/bambadia/Desktop/APK/smi_140.app", true, FailureHandling.STOP_ON_FAILURE);
 
 		}catch(Exception e){
@@ -71,16 +76,29 @@ class GlobalHooks {
 		}
 
 	}
-	
+
 	@Before(order = 1)
 	public void passedOnboardingStepsAndGoToHomePage() {
-		
-		KeywordUtil.logInfo("////////////////////" +" Before order = 1 " +  "/////////////////");	
-		Page_Start page_Start = new Page_Start();
-		KeywordUtil.logInfo("////////////////////" +" New page created " + page_Start  +  "/////////////////");
-		
-		page_Start.clickOnContinueBtn().allowTracking();	
-		
+
+		try {
+
+			KeywordUtil.logInfo("*************** Processing Onboarding steps ***************");
+			def page_Start = new Page_Start();
+			page_Start.clickOnContinueBtn()
+					.allowTracking()
+					.refuseAllcookies();
+			def onboarding_Start_App = new Onboarding_Start_App();
+			onboarding_Start_App.clickSkipBtn();
+			onboarding_Start_App.clickSkipBtn();
+			onboarding_Start_App.clickSkipBtn();
+			
+			Mobile.verifyEqual((new Page_Home()).is_HeaderLogo_Present(), true);
+
+		} catch (Exception e) {
+			KeywordUtil.markErrorAndStop("Cannot process onboarding steps");
+			e.printStackTrace()
+		}
+
 	}
 
 	@After

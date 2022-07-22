@@ -11,14 +11,19 @@ import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import runner.EsRunner as EsRunner
 import org.openqa.selenium.Keys as Keys
 
-String[] logTags = ((GlobalVariable.tags) as String[])
+Mobile.startApplication('/Users/bambadia/Desktop/APK/smi_140.app', true)
 
-CucumberKW.runFeatureFolderWithTags('Include/features/', logTags, FailureHandling.STOP_ON_FAILURE)
+Mobile.switchToPortrait()
+
+Mobile.tap(findTestObject('null'), 0)
+
+Mobile.switchToPortrait()
+
+Mobile.closeApplication()
+

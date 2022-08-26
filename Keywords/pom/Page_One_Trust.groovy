@@ -21,11 +21,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
-import utils.TestUtils
+import utils.MobileHelper
 
 public class Page_One_Trust {
 
-	TestUtils utils = new TestUtils();
+	MobileHelper utils = new MobileHelper();
 
 	private TestObject continueButtonId = findTestObject('Object Repository/MobileUI/Pages/Page_One_Trust/Button_continueButtonId');
 	private TestObject oneTrustImg = findTestObject('Object Repository/MobileUI/Pages/Page_One_Trust/Image_friendlyTracking') ;
@@ -42,13 +42,13 @@ public class Page_One_Trust {
 	@Keyword
 	public Page_Cookies_Consent allowTracking() {
 		clickOnContinueBtn();
-		clickOnAllowAlertBtn();		
+		clickOnAllowAlertBtn();
 		return new Page_Cookies_Consent();
 	}
 
 	@Keyword
 	def clickOnContinueBtn() {
-		Mobile.tap(continueButtonId, TestUtils.WAIT_TIMEOUT);
+		Mobile.tap(continueButtonId, MobileHelper.WAIT_TIMEOUT);
 	}
 
 	@Keyword

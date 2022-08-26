@@ -5,8 +5,6 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-
-import com.github.fge.jsonschema.examples.Utils
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
@@ -21,11 +19,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
-import utils.TestUtils
+import utils.MobileHelper
 
-public class Page_Home {
+public class Page_Home extends Tabbar_Menu {
 
-	TestUtils utils =  new TestUtils();
 
 	private TestObject headerWelcomeNameTxt = findTestObject('Object Repository/MobileUI/Pages/Page_Home/Text_header_welcomeName');
 	private TestObject headerSecondLineTxt = findTestObject('Object Repository/MobileUI/Pages/Page_Home/Text_header_secondLine');
@@ -38,35 +35,35 @@ public class Page_Home {
 
 	@Keyword
 	public String getHeaderWelcomeNameTxt() {
-		return Mobile.getAttribute(headerWelcomeNameTxt, "label", utils.WAIT_TIMEOUT);
+		return Mobile.getAttribute(headerWelcomeNameTxt, "label", WAIT_TIMEOUT);
 	}
 
 	@Keyword
 	public Boolean is_HeaderLogo_Present() {
-		return utils.isElementPresent_Mobile(headerAuchanLogo, utils.WAIT_TIMEOUT);
+		return isElementPresent_Mobile(headerAuchanLogo, WAIT_TIMEOUT);
 	}
 
 
 	@Keyword
 	public String getHeaderSecondLineTxt() {
-		return Mobile.getAttribute(headerSecondLineTxt, "label", utils.WAIT_TIMEOUT);
+		return Mobile.getAttribute(headerSecondLineTxt, "label", WAIT_TIMEOUT);
 	}
 
 
 	@Keyword
 	public void clickOnHeaderSearchInput() {
-		Mobile.tap(headerSearchInput, utils.WAIT_TIMEOUT);
+		Mobile.tap(headerSearchInput, WAIT_TIMEOUT);
 	}
 
 
 	@Keyword
 	public void longPressOnHeaderAuchanLogo() {
-		Mobile.tapAndHold(headerAuchanLogo, 10, utils.WAIT_TIMEOUT);
+		Mobile.tapAndHold(headerAuchanLogo, 10, WAIT_TIMEOUT);
 	}
 
 
 	public void clickOnHeaderLoyaltyBtn() {
 
-		Mobile.tap(headerLoyaltyBtn, utils.WAIT_TIMEOUT);
+		Mobile.tap(headerLoyaltyBtn, WAIT_TIMEOUT);
 	}
 }

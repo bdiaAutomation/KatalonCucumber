@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "C5EDAEA4F64B6989FE55C9E3458782A3",
+  "keywordFileContentHash": "C269DEB54F7E7B7A9127F20293969023",
   "keywordClasses": [
     {
       "name": "pom.Onboarding_Start_App",
@@ -15,6 +15,25 @@
           "javadoc": ""
         },
         {
+          "name": "isOnboardingDisplayed",
+          "parameters": [
+            {
+              "name": "timeout",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
           "name": "notificationBtn",
           "parameters": [],
           "javadoc": ""
@@ -23,6 +42,38 @@
           "name": "chooseAstoreBtn",
           "parameters": [],
           "javadoc": ""
+        },
+        {
+          "name": "checkAndTapSkipButtonIfPresent",
+          "parameters": [
+            {
+              "name": "to",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "com.kms.katalon.core.testobject.TestObject",
+                "unresolvedClassName": "TestObject",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "timeout",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\n\t *\n\t * @param to Katalon TestObject\n\t * @param timeout int\n\t * @return\n\t */"
         }
       ]
     }

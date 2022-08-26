@@ -3,6 +3,7 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.annotation.BeforeTestCase as BeforeTestCase
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -22,3 +23,7 @@ import org.openqa.selenium.Keys as Keys
 String[] logTags = ((GlobalVariable.tags) as String[])
 
 CucumberKW.runFeatureFolderWithTags('Include/features/', logTags, FailureHandling.STOP_ON_FAILURE)
+
+for (def index : (0..0)) {
+}
+

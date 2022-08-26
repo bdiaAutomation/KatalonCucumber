@@ -15,12 +15,16 @@
       <name>webkiDebugProxyPort</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>Language for adapting to a particular locale
+Localization for adapting to a particular locale
+</description>
       <initValue>'es'</initValue>
       <name>language</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>Localization for adapting to a particular locale
+Localization for adapting to a particular locale
+</description>
       <initValue>'es_ES'</initValue>
       <name>locale</name>
    </GlobalVariableEntity>
@@ -33,5 +37,15 @@
       <description></description>
       <initValue>false</initValue>
       <name>useNativeCachingStrategy</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>30</initValue>
+      <name>explicitWait</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>true</initValue>
+      <name>newWDA</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

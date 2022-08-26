@@ -1,0 +1,15 @@
+{
+  "keywordFileContentHash": "9B3D58292A5A15AA588F1CE1BAE6F4D1",
+  "keywordClasses": [
+    {
+      "name": "pom.Page_Account",
+      "keywordMethods": [
+        {
+          "name": "clickOnLoginButton",
+          "parameters": []
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}

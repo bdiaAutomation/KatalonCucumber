@@ -1,44 +1,14 @@
-ext {
-  AUTO_IMPORTED_JAR_PREFIX = 'AUTOIMPORTED_'
+plugins {
+  id 'java-library'
+  id "com.katalon.gradle-plugin" version "0.1.1"
 }
 
 repositories {
   mavenCentral()
-  mavenLocal()
-}
-
-configurations {
-  myconf
 }
 
 dependencies {
-	// https://mvnrepository.com/artifact/io.cucumber/cucumber-core
-	//myconf group: 'io.cucumber', name: 'cucumber-core', version: '7.2.3'
-    myconf group: 'io.cucumber', name: 'cucumber-core', version: '7.4.1'
-    myconf group: 'io.cucumber', name: 'gherkin', version: '24.0.0'
-    
-    
-
-}
-
-task drivers {
-    doFirst {
-        delete fileTree("Drivers") {
-            include("**/" + AUTO_IMPORTED_JAR_PREFIX + "*")
-        }
-    }
-    doLast {
-        copy { copySpec ->
-            copySpec
-                .from(project.getConfigurations().getByName("myconf"))
-                .into("Drivers")
-                .include(
-                    "**/cucumber*.jar",
-                    "**/gherkin*.jar",
-                    )
-                .rename({ s ->
-                    AUTO_IMPORTED_JAR_PREFIX + s
-                    })
-        }
-    }
+  implementation group: 'io.cucumber', name: 'cucumber-core', version: '7.4.1'
+  //implementation group: 'io.cucumber', name: 'cucumber-java', version: '7.4.1'
+  implementation group: 'io.cucumber', name: 'cucumber-groovy', version: '6.10.4'
 }

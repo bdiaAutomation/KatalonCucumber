@@ -29,4 +29,9 @@
       <initValue>['@ROM', '@regression']</initValue>
       <name>tags</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>30</initValue>
+      <name>explicitWait</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

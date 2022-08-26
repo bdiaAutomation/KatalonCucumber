@@ -1,0 +1,36 @@
+{
+  "keywordFileContentHash": "1148AF8771D3641A777EBD7F05445E6E",
+  "keywordClasses": [
+    {
+      "name": "pom.Tabbar_Menu",
+      "keywordMethods": [
+        {
+          "name": "clickOnAccountEntry",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "clickOnHomeEntry",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "clickOnMcommerceEntry",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "clickOnCuponEntry",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "clickOnCartEntry",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

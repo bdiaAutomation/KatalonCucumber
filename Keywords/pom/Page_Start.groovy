@@ -22,10 +22,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
-import utils.TestUtils
+import utils.MobileHelper
 
 public class Page_Start {
-	
+
 	/**
 	 * Start page
 	 * MobileUI Objects 
@@ -33,17 +33,16 @@ public class Page_Start {
 	private TestObject logoBirdy =  findTestObject('Object Repository/MobileUI/Pages/Page_Start/Image_logoBirdy');
 	private TestObject suggestedContinueBtn = findTestObject('Object Repository/MobileUI/Pages/Page_Start/Button_suggestedContinueBtn');
 	private TestObject suggestedChangeCountry = findTestObject('Object Repository/MobileUI/Pages/Page_Start/Button_suggestedChangeCountry');
-	
-	
+
+
 	@Keyword
 	def Page_One_Trust clickOnContinueBtn() {
-		Mobile.tap(suggestedContinueBtn, TestUtils.WAIT_TIMEOUT);	
+		Mobile.tap(suggestedContinueBtn, MobileHelper.WAIT_TIMEOUT);
 		return new Page_One_Trust();
 	}
-	
+
 	@Keyword
 	def clickOnSelectACountryBtn() {
-		Mobile.tap(suggestedChangeCountry, TestUtils.WAIT_TIMEOUT);
+		Mobile.tap(suggestedChangeCountry, MobileHelper.WAIT_TIMEOUT);
 	}
-	
 }
